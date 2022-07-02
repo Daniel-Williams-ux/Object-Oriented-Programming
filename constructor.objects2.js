@@ -33,3 +33,18 @@ The constructor is more flexible. It's now possible to define the properties for
 which is one way that JavaScript constructors are so useful. 
 They group objects together based on shared characteristics and behavior and define a blueprint that automates their creation.
 */
+
+
+function Bird (name, color) {
+  this.name = name;
+  this.color = color;
+  this.age = 3;
+}
+let info = new Bird('Albert', 'blue');
+console.log(info.name );//Albert
+console.log(info.color);//blue
+console.log(info.age)//3
+//using destructuring assignment
+const { name, color, age} = info;
+console.log(name, color, age) //Abert blue 3
+console.log(info); //Bird { name: 'Albert', color: 'blue', age: 3}
