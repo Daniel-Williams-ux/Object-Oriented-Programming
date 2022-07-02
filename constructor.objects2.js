@@ -48,3 +48,18 @@ console.log(info.age)//3
 const { name, color, age} = info;
 console.log(name, color, age) //Abert blue 3
 console.log(info); //Bird { name: 'Albert', color: 'blue', age: 3}
+
+
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+let terrier = new Dog('Joe', 'Green')
+console.log(terrier)// Dog { name: 'Joe', color: 'Green', numLegs: 4}
+console.log(terrier.name);
+console.log(terrier.color);
+console.log(terrier.numLegs);
+//using destructuring operator
+const {name, color, numLegs} = terrier;
+console.log(terrier)
