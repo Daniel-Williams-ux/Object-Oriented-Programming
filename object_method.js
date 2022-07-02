@@ -11,6 +11,16 @@ let duck = {
 };
 console.log(duck.sayName()); //The name of this duck is Aflac.
 
+//using destructuring assignment
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: function() {return "The name of this duck is " + duck.name + ".";}
+};
+//console.log(duck.sayName()); //The name of this duck is Aflac.
+const {sayName} = duck;
+console.log(sayName())//The name of this duck is Aflac
+
 
 let dog = {
   name: "Spot",
